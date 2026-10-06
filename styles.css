@@ -318,9 +318,6 @@ body {
 .project-intro {
     border-top: 1px solid #999;
     padding: 64px 0;
-}
-
-.project-intro__heading {
     color: #5F00AD;
 }
 
@@ -472,7 +469,118 @@ body {
         margin-top: 39px;
     }
 
+    .more-projects .project--editorial .project__title {
+        max-width: 280px;
+    }
+
     .more-projects__title {
+        font-size: 14px;
+    }
+}
+
+.about-intro {
+    padding: 16px 0 48px;
+    border-top: 1px solid #999;
+}
+
+.about-intro p {
+    margin: 0;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.3;
+}
+
+.about-intro p + p {
+    margin-top: 32px;
+}
+
+.current {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+}
+
+.current__title {
+    margin: 0;
+    padding-top: 24px;
+    border-top: 1px solid #999;
+    font-family: "Source Code Pro", "Courier New", monospace;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.current__list {
+    margin: 0;
+}
+
+.current__item {
+    display: grid;
+    grid-template-columns: 110px 1fr;
+    gap: 20px;
+    padding: 24px 0;
+    border-top: 1px solid #999;
+    font-family: "Source Code Pro", "Courier New", monospace;
+    font-size: 10px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.current__item dd {
+    margin: 0;
+}
+
+.current__picture,
+.current__image {
+    display: block;
+}
+
+.current__image {
+    width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    .about-intro {
+        padding: 96px 0 80px;
+        border-top: 0;
+    }
+
+    .about-intro p {
+        font-size: 28px;
+        line-height: 1.3;
+    }
+
+    .current__title,
+    .current__item {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .about-intro {
+        padding-top: 128px;
+        padding-bottom: 96px;
+    }
+
+    .about-intro p {
+        font-size: 38px;
+        line-height: 1.2;
+    }
+
+    .current {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 50px;
+    }
+
+    .current__title,
+    .current__content {
+        flex: 1;
+    }
+
+    .current__title,
+    .current__item {
         font-size: 14px;
     }
 }
