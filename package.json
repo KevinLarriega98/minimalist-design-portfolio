@@ -1,0 +1,29 @@
+{
+  "name": "minimalist-design-student-portfolio",
+  "version": "1.0.0",
+  "description": "A responsive, multi-page portfolio for Sarah Chen, a fictional design student exploring visual identity, editorial design, photography, and art.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "npm run lint:html && npm run lint:js",
+    "lint:html": "npx --yes htmlhint \"**/*.html\"",
+    "lint:js": "eslint .",
+    "test": "node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KevinLarriega98/minimalist-design-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/KevinLarriega98/minimalist-design-portfolio/issues"
+  },
+  "homepage": "https://github.com/KevinLarriega98/minimalist-design-portfolio#readme",
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.13.0",
+    "globals": "^17.13.0"
+  }
+}
