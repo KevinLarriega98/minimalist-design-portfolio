@@ -1,29 +1,18 @@
 {
-  "name": "minimalist-design-student-portfolio",
+  "name": "web-personal",
   "version": "1.0.0",
-  "description": "A responsive, multi-page portfolio for Sarah Chen, a fictional design student exploring visual identity, editorial design, photography, and art.",
-  "main": "index.js",
-  "scripts": {
-    "lint": "npm run lint:html && npm run lint:js",
-    "lint:html": "npx --yes htmlhint \"**/*.html\"",
-    "lint:js": "eslint .",
-    "test": "node --test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/KevinLarriega98/minimalist-design-portfolio.git"
-  },
-  "keywords": [],
+  "description": "",
+  "license": "MIT",
   "author": "",
-  "license": "ISC",
-  "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/KevinLarriega98/minimalist-design-portfolio/issues"
-  },
-  "homepage": "https://github.com/KevinLarriega98/minimalist-design-portfolio#readme",
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "eslint": "^10.13.0",
     "globals": "^17.13.0"
+  },
+  "scripts": {
+    "lint": "npm run lint:html && npm run lint:js",
+    "lint:html": "npx --yes htmlhint \"**/*.html\"",
+    "lint:js": "eslint .",
+    "test": "node --test --experimental-test-coverage --test-coverage-exclude=\"tests/**\" --test-reporter=spec --test-reporter-destination=stdout --test-reporter=lcov --test-reporter-destination=lcov.info"
   }
 }
