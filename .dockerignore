@@ -1,0 +1,14 @@
+node_modules
+.git
+.github
+tests
+lcov.info
+package.json
+package-lock.json
+eslint.config.mjs
+sonar-project.properties
+Dockerfile
+compose.yaml
+.dockerignore
+.gitignore
+README.md
